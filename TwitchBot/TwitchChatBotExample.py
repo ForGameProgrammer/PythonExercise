@@ -35,8 +35,5 @@ while True:
     msg = parse_message(data.decode())
     if not msg["message"]:
         continue
-    if msg["username"][0]=="forgameprogrammer" :
-        print("########################################################",msg["username"][0], ":", msg["message"][0])
-
     print(msg["username"][0], ":", msg["message"][0])
 
