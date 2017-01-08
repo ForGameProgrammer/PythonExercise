@@ -1,15 +1,16 @@
 import socket
 import re
-import time
+from TwitchBot.config import config
+
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-username = "ForGameProgrammer"
-password = "oauth:2ih8agrjh4lf618u03izyfl15ucmsp"  # http://twitchapps.com/tmi/
-channel = "fate_twisted_na"
+username = config["username"]
+password = config["password"]  # http://twitchapps.com/tmi/
+channel = config["channel"]
 
-server = "irc.twitch.tv"
-port = 6667
+server = config["server"]
+port = config["port"]
 
 sock.connect((server, port))
 
