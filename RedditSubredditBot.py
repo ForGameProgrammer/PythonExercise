@@ -1,7 +1,4 @@
 import praw
-import datetime
-import time
-import re
 
 reddit = praw.Reddit('bot1') #praw.ini [bot1]
 subreddit = reddit.subreddit("learnprogramming")
